@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./dts/**"
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "route-history": ["src/routeHistory.ts"],
+      "store": ["src/store"],
+      "api": ["src/api"],
+      "root-constants": ["src/rootConstants"],
+      "types": ["src/types"],
+      "pages": ["src/pages"],
+      "reducers/*": ["src/reducers/*"],
+      "selects/*": ["src/selects/*"],
+      "actions/*": ["src/actions/*"],
+      "services/*": ["src/services/*"],
+      "models/*": ["src/models/*"],
+      "modules/*": ["src/modules/*"],
+      "components/*": ["src/components/*"],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
